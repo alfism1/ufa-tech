@@ -1,19 +1,18 @@
-import React, { Component } from 'react';
-import Link from '../../utils/ActiveLink';
+import React, { Component } from "react";
+import Link from "../../utils/ActiveLink";
 
 class Navbar extends Component {
-
-  // Navbar 
+  // Navbar
   _isMounted = false;
   state = {
     display: false,
-    collapsed: true
+    collapsed: true,
   };
   toggleNavbar = () => {
     this.setState({
       collapsed: !this.state.collapsed,
     });
-  }
+  };
   componentDidMount() {
     let elementId = document.getElementById("navbar");
     document.addEventListener("scroll", () => {
@@ -30,10 +29,13 @@ class Navbar extends Component {
   }
 
   render() {
-
     const { collapsed } = this.state;
-    const classOne = collapsed ? 'collapse navbar-collapse' : 'collapse navbar-collapse show';
-    const classTwo = collapsed ? 'navbar-toggler navbar-toggler-right collapsed' : 'navbar-toggler navbar-toggler-right';
+    const classOne = collapsed
+      ? "collapse navbar-collapse"
+      : "collapse navbar-collapse show";
+    const classTwo = collapsed
+      ? "navbar-toggler navbar-toggler-right collapsed"
+      : "navbar-toggler navbar-toggler-right";
 
     return (
       <>
@@ -52,7 +54,8 @@ class Navbar extends Component {
                 className={classTwo}
                 type="button"
                 data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
@@ -65,49 +68,37 @@ class Navbar extends Component {
                 <ul className="navbar-nav">
                   <li className="nav-item">
                     <Link href="/">
-                      <a className="nav-link" onClick={e => e.preventDefault()}>
-                        Home
-                      </a>
+                      <a className="nav-link">Home</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/">
-                      <a className="nav-link" onClick={e => e.preventDefault()}>
-                        About
-                      </a>
+                    <Link href="/about-1">
+                      <a className="nav-link">About</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/">
-                      <a className="nav-link" onClick={e => e.preventDefault()}>
-                        Services
-                      </a>
+                    <Link href="/services">
+                      <a className="nav-link">Services</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/">
-                      <a className="nav-link" onClick={e => e.preventDefault()}>
-                        Pages
-                      </a>
+                    <Link href="/pricing">
+                      <a className="nav-link">Pricing</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/">
-                      <a className="nav-link" onClick={e => e.preventDefault()}>
-                        News
-                      </a>
+                    <Link href="/team">
+                      <a className="nav-link">Team</a>
                     </Link>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/">
-                      <a className="nav-link" onClick={e => e.preventDefault()}>
-                        Contact
-                      </a>
+                    <Link href="/contact">
+                      <a className="nav-link">Contact</a>
                     </Link>
                   </li>
                 </ul>
