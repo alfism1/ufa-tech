@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "../../utils/ActiveLink";
+import Image from "next/image";
 
 class Navbar extends Component {
   // Navbar
@@ -43,9 +44,15 @@ class Navbar extends Component {
           <nav className="navbar navbar-expand-md">
             <div className="container">
               <Link href="/">
-                <a className="navbar-brand">
-                  LOGO
+                <a className="navbar-brand d-flex justify-content-center align-items-center">
+                  {/* LOGO */}
                   {/* <img src="/images/white-logo.png" alt="logo" /> */}
+                  <Image
+                    src="/images/white-logo.png"
+                    width={130}
+                    height={40}
+                    layout="intrinsic"
+                  />
                 </a>
               </Link>
 
