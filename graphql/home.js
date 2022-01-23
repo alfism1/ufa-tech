@@ -58,6 +58,12 @@ export const getHomeInfo = async () => {
           }
           isActive
           nameService
+          descriptionService {
+            html
+            markdown
+            raw
+            text
+          }
         }
       }
       ufaTestimonials {
