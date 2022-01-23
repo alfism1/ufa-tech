@@ -26,6 +26,7 @@
         "react-owl-carousel3": "^2.2.5",
         "react-visibility-sensor": "^5.1.1",
         "sass": "^1.43.4",
+        "sharp": "^0.29.3",
         "sweetalert2": "^11.1.10",
         "sweetalert2-react-content": "^4.2.0"
     }
