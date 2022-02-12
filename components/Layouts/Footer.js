@@ -177,13 +177,13 @@ class Footer extends Component {
                     <li className="address">
                       <i className="flaticon-call"></i>
                       <span>Phone</span>
-                      {this.props.contact.filter((c) => c.nameContact == "Phone")[0].typeContact}
+                      {this.props.contact.filter((c) => c?.nameContact == "Phone")[0]?.typeContact}
                     </li>
 
                     <li className="address">
                       <i className="flaticon-envelope"></i>
                       <span>Email</span>
-                      {this.props.contact.filter((c) => c.typeContact == "Email")[0].nameContact}
+                      {this.props.contact.filter((c) => c?.typeContact == "Email")[0]?.nameContact}
                     </li>
 
                     <li className="address">
