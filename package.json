@@ -1,7 +1,7 @@
 {
-    "name": "jumpx",
+    "name": "ufatech",
     "version": "1.7.0",
-    "description": "Jumpx - React Next.js AI & IT Startup Template",
+    "description": "UFA tech company profile",
     "main": "index.js",
     "scripts": {
         "dev": "next",
