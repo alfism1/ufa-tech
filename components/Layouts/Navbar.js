@@ -74,39 +74,27 @@ class Navbar extends Component {
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link href="/">
-                      <a className="nav-link">Home</a>
-                    </Link>
+                    <a className="nav-link">Home</a>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/about-1">
-                      <a className="nav-link">About</a>
-                    </Link>
+                    <a className="nav-link">About</a>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/services">
-                      <a className="nav-link">Services</a>
-                    </Link>
+                    <a className="nav-link">Services</a>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/pricing">
-                      <a className="nav-link">Pricing</a>
-                    </Link>
+                    <a className="nav-link">Pricing</a>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/team">
-                      <a className="nav-link">Team</a>
-                    </Link>
+                    <a className="nav-link">Team</a>
                   </li>
 
                   <li className="nav-item">
-                    <Link href="/contact">
-                      <a className="nav-link">Contact</a>
-                    </Link>
+                    <a className="nav-link">Contact</a>
                   </li>
                 </ul>
               </div>
