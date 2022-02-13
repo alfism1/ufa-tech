@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "next",
         "build": "next build",
+        "deploy": "pm2 delete 'ufa_tech_frontend'; pm2 start 'npm run start' --name 'ufa_tech_frontend'",
         "start": "next start",
         "export": "next export"
     },
