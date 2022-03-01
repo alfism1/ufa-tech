@@ -92,7 +92,7 @@ class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <a href="faqs" className="nav-link">
+                    <a href="#faqs" className="nav-link">
                       FAQs
                     </a>
                   </li>
@@ -103,6 +103,7 @@ class Navbar extends Component {
 
                   <li className="nav-item">
                     <a
+                      target={"_blank"}
                       href="https://api.whatsapp.com/send?phone=6281296589616"
                       className="nav-link"
                     >

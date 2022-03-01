@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import Head from "next/head";
+
 import Navbar from "../components/Layouts/Navbar";
 import MainBanner from "../components/Home/MainBanner";
 import PartnerSlider from "../components/Common/PartnerSlider";
@@ -24,6 +26,20 @@ function Home({ homeInfo }) {
 
   return (
     <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>UFA Tech - IT solution masa kini</title>
+        <meta
+          name="description"
+          content="UFA Tech adalah jawaban bagi anda yang membutuhkan IT solution. Kami menyelesaikan setiap proyek dengan perhatian ekstra sesuai kebutuhan pelanggan."
+        />
+        <meta
+          name="abstract"
+          content="Solusi kami tawarkan untuk membantu anda adalah software development atau pembuatan aplikasi yang terdiri dari aplikasi kasir, perkantoran, company profile, Point of Sale, mesin antrian dan lain sebagainya sesuai dengan konsep yang anda berikan."
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://ufatech.id" />
+      </Head>
       <Navbar />
       <MainBannerV2 />
       {/* <MainBanner /> */}
