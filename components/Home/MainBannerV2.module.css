@@ -1,0 +1,91 @@
+.mainBanner {
+  color: #fff;
+}
+
+.itemBg1,
+.itemBg2,
+.itemBg3 {
+  height: 100vh;
+  width: 100%;
+}
+
+.itemBg1::after,
+.itemBg2::after,
+.itemBg3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  background-color: #24416b;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.itemBg1 {
+  background-image: url("/images/home-five/slider1.jpg");
+}
+.itemBg2 {
+  background-image: url("/images/home-five/slider2.jpg");
+}
+.itemBg3 {
+  background-image: url("/images/home-five/slider3.jpg");
+}
+
+.itemContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  width: 80%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* transition: all 0.5s ease-in-out;
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -45%;
+  width: 90%;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.35s ease-in-out;
+  z-index: 100; */
+}
+
+.itemContent h1 {
+  font-size: 70px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .itemBg1,
+  .itemBg2,
+  .itemBg3 {
+    height: 50vh;
+    width: 100%;
+  }
+  .itemContent h1 {
+    font-size: 35px;
+  }
+}
+
+/* 
+.blocker {
+  position: absolute;
+  top: 0;
+  display: block;
+  background-color: #24416b;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.9;
+  z-index: 1;
+} */

@@ -15,6 +15,7 @@ import News from "../components/Common/News";
 import Footer from "../components/Layouts/Footer";
 
 import { getHomeInfo } from "../graphql/home";
+import MainBannerV2 from "../components/Home/MainBannerV2";
 
 function Home({ homeInfo }) {
   // useEffect(() => {
@@ -24,7 +25,8 @@ function Home({ homeInfo }) {
   return (
     <>
       <Navbar />
-      <MainBanner />
+      <MainBannerV2 />
+      {/* <MainBanner /> */}
       <PartnerSlider />
       <About aboutData={homeInfo.ufaAbouts[0]} />
       <WhyChooseUs whyChooseUsData={homeInfo.ufaWhyChooseUses[0]} />
