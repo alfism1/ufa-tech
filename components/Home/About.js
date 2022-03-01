@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function About({ aboutData }) {
   return (
-    <section className="about-area pt-100">
+    <section id="tentang" className="about-area pt-100">
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6">

@@ -9,7 +9,7 @@ import {
 
 const Faq = ({ faqData }) => {
   return (
-    <section className="faq-area pt-100">
+    <section id="faqs" className="faq-area pt-100">
       <div className="container">
         <div className="section-title">
           <span>FAQ,s</span>

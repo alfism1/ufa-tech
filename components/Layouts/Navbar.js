@@ -74,27 +74,40 @@ class Navbar extends Component {
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <a className="nav-link">Home</a>
+                    <a href="#" className="nav-link">
+                      Home
+                    </a>
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link">About</a>
+                    <a href="#tentang" className="nav-link">
+                      Tentang
+                    </a>
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link">Services</a>
+                    <a href="#layanan" className="nav-link">
+                      Layanan
+                    </a>
                   </li>
 
                   <li className="nav-item">
-                    <a className="nav-link">Pricing</a>
+                    <a href="faqs" className="nav-link">
+                      FAQs
+                    </a>
                   </li>
 
-                  <li className="nav-item">
+                  {/* <li className="nav-item">
                     <a className="nav-link">Team</a>
-                  </li>
+                  </li> */}
 
                   <li className="nav-item">
-                    <a className="nav-link">Contact</a>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=6281296589616"
+                      className="nav-link"
+                    >
+                      Hubungi kami
+                    </a>
                   </li>
                 </ul>
               </div>

@@ -9,7 +9,7 @@ class ServicesStyleOne extends Component {
 
   render() {
     return (
-      <section className="choose-ue-area ptb-100">
+      <section id="layanan" className="choose-ue-area ptb-100">
         <div className="container">
           <div className="section-title">
             <span>Keahlian kami?</span>
