@@ -14,11 +14,12 @@ const MainBannerV2 = () => {
         className="presentation-mode"
         stopOnHover={true}
         showStatus={false}
+        swipeable={false}
       >
         <div className={styles.item}>
           <div className={styles.itemBg1} />
           <div className={styles.itemContent}>
-            <span>IT & AI Services</span>
+            <span>Software Dev. & Dibirand Services</span>
             <h1>Secure IT Solutions For A More Secure Environment</h1>
             <p>
               If we drive down the cost of transportation in space, we can do
@@ -29,7 +30,7 @@ const MainBannerV2 = () => {
         <div className={styles.item}>
           <div className={styles.itemBg2} />
           <div className={styles.itemContent}>
-            <span>IT & AI Services</span>
+            <span>Software Dev. & Dibirand Services</span>
             <h1>Specialized Artificial Intelligence Startup</h1>
             <p>
               If we drive down the cost of transportation in space, we can do
@@ -40,7 +41,7 @@ const MainBannerV2 = () => {
         <div className={styles.item}>
           <div className={styles.itemBg3} />
           <div className={styles.itemContent}>
-            <span>IT & AI Services</span>
+            <span>Software Dev. & Dibirand Services</span>
             <h1>World’s Leading Machine Learning Company</h1>
             <p>
               If we drive down the cost of transportation in space, we can do

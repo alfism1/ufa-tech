@@ -61,50 +61,34 @@ class Footer extends Component {
                   <h3>Services</h3>
                   <ul>
                     <li>
-                      <Link href="/service-details">
+                      <Link href="#">
                         <a>
                           <i className="right-icon bx bx-chevrons-right"></i>
-                          Big Data
+                          Digi Brand
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service-details">
+                      <Link href="#">
                         <a>
                           <i className="right-icon bx bx-chevrons-right"></i>
-                          UI/UX Design
+                          Sistem informasi
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service-details">
+                      <Link href="#">
                         <a>
                           <i className="right-icon bx bx-chevrons-right"></i>
-                          Desktop Application
+                          Website
                         </a>
                       </Link>
                     </li>
                     <li>
-                      <Link href="/service-details">
+                      <Link href="#">
                         <a>
                           <i className="right-icon bx bx-chevrons-right"></i>
-                          Mobile Application
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service-details#">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          Product Engineering
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/service-details">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          Machine Learning
+                          Mobile application
                         </a>
                       </Link>
                     </li>
@@ -114,56 +98,32 @@ class Footer extends Component {
 
               <div className="col-lg-3 col-md-6">
                 <div className="single-widget">
-                  <h3>Important Links</h3>
+                  <h3>Links</h3>
 
                   <ul>
                     <li>
-                      <Link href="/about-1">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          About Us
-                        </a>
-                      </Link>
+                      <a href="#">
+                        <i className="right-icon bx bx-chevrons-right"></i>
+                        Home
+                      </a>
                     </li>
                     <li>
-                      <Link href="/services">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          Services
-                        </a>
-                      </Link>
+                      <a href="#tentang">
+                        <i className="right-icon bx bx-chevrons-right"></i>
+                        Tentang Kami
+                      </a>
                     </li>
                     <li>
-                      <Link href="/pricing">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          Pricing
-                        </a>
-                      </Link>
+                      <a href="#layanan">
+                        <i className="right-icon bx bx-chevrons-right"></i>
+                        Layanan
+                      </a>
                     </li>
                     <li>
-                      <Link href="/team">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          Team
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/contact">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          Support
-                        </a>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link href="/testimonials">
-                        <a>
-                          <i className="right-icon bx bx-chevrons-right"></i>
-                          Testimonials
-                        </a>
-                      </Link>
+                      <a href="#faqs">
+                        <i className="right-icon bx bx-chevrons-right"></i>
+                        FAQs
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -177,13 +137,21 @@ class Footer extends Component {
                     <li className="address">
                       <i className="flaticon-call"></i>
                       <span>Phone</span>
-                      {this.props.contact.filter((c) => c?.nameContact == "Phone")[0]?.typeContact}
+                      {
+                        this.props.contact.filter(
+                          (c) => c?.nameContact == "Phone"
+                        )[0]?.typeContact
+                      }
                     </li>
 
                     <li className="address">
                       <i className="flaticon-envelope"></i>
                       <span>Email</span>
-                      {this.props.contact.filter((c) => c?.typeContact == "Email")[0]?.nameContact}
+                      {
+                        this.props.contact.filter(
+                          (c) => c?.typeContact == "Email"
+                        )[0]?.nameContact
+                      }
                     </li>
 
                     <li className="address">

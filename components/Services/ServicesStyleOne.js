@@ -24,11 +24,7 @@ class ServicesStyleOne extends Component {
               <div key={data.id} className="col-lg-4 col-sm-6">
                 <div className="single-features">
                   {/* <i className="flaticon-cloud-computing-1"></i> */}
-                  <Image
-                    src={data.imageService.url}
-                    height={100}
-                    width={105}
-                  />
+                  <Image src={data.imageService.url} height={100} width={105} />
                   <h3>{data.nameService}</h3>
                   <p>{data.descriptionService.text}</p>
 
