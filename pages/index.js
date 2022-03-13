@@ -20,9 +20,9 @@ import { getHomeInfo } from "../graphql/home";
 import MainBannerV2 from "../components/Home/MainBannerV2";
 
 function Home({ homeInfo }) {
-  useEffect(() => {
-    console.log(homeInfo);
-  }, []);
+  // useEffect(() => {
+  //   console.log(homeInfo);
+  // }, []);
 
   return (
     <>
