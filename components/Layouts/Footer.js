@@ -139,8 +139,8 @@ class Footer extends Component {
                       <span>Phone</span>
                       {
                         this.props.contact.filter(
-                          (c) => c?.nameContact == "Phone"
-                        )[0]?.typeContact
+                          (c) => c?.typeContact == "Phone"
+                        )[0]?.nameContact
                       }
                     </li>
 

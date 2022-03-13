@@ -20,9 +20,9 @@ import { getHomeInfo } from "../graphql/home";
 import MainBannerV2 from "../components/Home/MainBannerV2";
 
 function Home({ homeInfo }) {
-  // useEffect(() => {
-  //   console.log(homeInfo);
-  // }, []);
+  useEffect(() => {
+    console.log(homeInfo);
+  }, []);
 
   return (
     <>
@@ -41,7 +41,7 @@ function Home({ homeInfo }) {
         <link rel="canonical" href="https://ufatech.id" />
       </Head>
       <Navbar />
-      <MainBannerV2 />
+      <MainBannerV2 sliderData={homeInfo.masterSliders} />
       {/* <MainBanner /> */}
       <PartnerSlider />
       <About aboutData={homeInfo.ufaAbouts[0]} />

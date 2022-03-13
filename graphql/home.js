@@ -5,6 +5,20 @@ const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
 export const getHomeInfo = async () => {
   const query = gql`
     query getHomeInfo {
+      masterSliders {
+        descriptionSlider {
+          text
+        }
+        headerSlider
+        isActive
+        nameSlider
+        assetSlider {
+          fileName
+          url
+          width
+          height
+        }
+      }
       ufaAbouts {
         id
         nameAbout

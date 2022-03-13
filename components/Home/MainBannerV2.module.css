@@ -23,7 +23,7 @@
   z-index: 1;
 }
 
-.itemBg1 {
+/* .itemBg1 {
   background-image: url("/images/home-five/slider1.jpg");
 }
 .itemBg2 {
@@ -31,7 +31,7 @@
 }
 .itemBg3 {
   background-image: url("/images/home-five/slider3.jpg");
-}
+} */
 
 .itemContent {
   position: absolute;
