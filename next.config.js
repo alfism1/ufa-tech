@@ -6,6 +6,6 @@ module.exports = {
   },
   trailingSlash: true,
   images: {
-    domains: ["media.graphcms.com"],
+    domains: ["media.graphcms.com", "media.graphassets.com"],
   },
 };
